@@ -60,8 +60,8 @@
   </svg>
 `;
 
-const style = document.createElement('style');
-style.textContent = `
+    const style = document.createElement("style");
+    style.textContent = `
   .main-contextMenu-tippyEnter {
     opacity: 0;
   }
@@ -70,7 +70,7 @@ style.textContent = `
     transition: opacity 200ms linear;
   }
 `;
-document.head.appendChild(style);
+    document.head.appendChild(style);
     spn.appendChild(outerSvg);
     btn.appendChild(spn);
 
@@ -78,13 +78,10 @@ document.head.appendChild(style);
       ...Spicetify.TippyProps,
       content: btn.ariaLabel,
       placement: "bottom",
-      animation: "fade",
     });
 
-    function mouseEnter() {
-    }
-    function mouseLeave() {
-    }
+    function mouseEnter() {}
+    function mouseLeave() {}
 
     btn.addEventListener("mouseenter", mouseEnter());
     btn.addEventListener("mouseleave", mouseLeave());
